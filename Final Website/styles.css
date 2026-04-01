@@ -42,13 +42,14 @@ nav a:hover {
 /* HERO */
 .hero {
     height: 90vh;
-    background: url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc") center/cover;
+    background: url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
 }
+
 
 .hero h1 {
     font-size: 40px;
@@ -79,7 +80,6 @@ section {
     gap: 30px;
     background: white;
     padding: 20px;
-    border-radius: 10px;
 }
 
 /* TEXT */
@@ -93,7 +93,6 @@ section img {
     max-width: 400px;
     height: 250px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 /* REVERSE */
@@ -101,6 +100,19 @@ section img {
     flex-direction: row-reverse;
 }
 
+/* WORK SECTION */
+section {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: white;
+    padding: 20px;
+}
+.work {
+    flex-direction: column;
+    align-items: flex-start;
+}
 /* WORK GALLERY */
 .gallery {
     display: flex;
@@ -109,10 +121,9 @@ section img {
 }
 
 .gallery img {
-    width: 48%;
+    width: 30%;
     height: 220px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 /* CONTACT */
