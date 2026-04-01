@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Motor Winding Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- CSS LINK -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
     <!-- HEADER -->
     <header>
-        <div class="logo">⚙️ Motor Winding</div>
+        <div class="logo">⚙️ Motor Winding Services</div>
         <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -40,8 +44,13 @@
             <div class="text">
                 <h2>About Us</h2>
                 <p>
-                    We specialize in repairing electric motors, rewinding, and maintenance services.
-                    Our mission is to deliver reliable, fast, and affordable motor solutions.
+                    At Haji Muhammad Rafique & Sons, we are passionate about providing top-notch motor repair
+                    and winding services. With years of hands-on experience, our expert technicians specialize
+                    in AC and DC motor repairs, fan motors, and water pump motors. We not only focus on restoring
+                    your motors to optimal performance but also ensure longevity through quality maintenance
+                    and precise rewinding techniques. Our commitment is to deliver fast, reliable, and affordable
+                    solutions tailored to meet each customer’s needs. Whether you are a homeowner or a business,
+                    we guarantee professional service and complete satisfaction every time.
                 </p>
             </div>
             <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180" alt="Motor">
@@ -52,7 +61,7 @@
             <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Workshop">
             <div class="text">
                 <h2>Our Services</h2>
-                <ul>
+                <ul class="service-list">
                     <li>AC Motor Winding</li>
                     <li>DC Motor Repair</li>
                     <li>Fan Motor Repair</li>
@@ -65,11 +74,11 @@
         <section class="why">
             <div class="text">
                 <h2>Why Choose Us?</h2>
-                <ol>
-                 <li>Experienced Technicians</li>
-                 <li>Affordable Prices</li>
-                 <li>Quick Service</li>
-                 <li>Quality Work</li>
+                <ol class="why-list">
+                    <li>Experienced Technicians</li>
+                    <li>Affordable Prices</li>
+                    <li>Quick Service</li>
+                    <li>Quality Work</li>
                 </ol>
             </div>
             <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db" alt="Technician">
@@ -77,33 +86,53 @@
 
         <!-- WORK -->
         <section class="work">
-    <h2>Our Work</h2>
-
-    <div class="gallery">
-        <img src="D:\Web-Development-Learning\image\images.jpg" alt="Work 1">
-        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="Work 2">
-        <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180" alt="Work 3">
-    </div>
-</section>
+            <h2>Our Work</h2>
+            <div class="gallery">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Work 1" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="Work 2"
+                    class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180" alt="Work 3"
+                    class="gallery-img">
+            </div>
+        </section>
 
         <!-- CONTACT -->
         <section class="contact">
             <h2>Contact Us</h2>
 
-            <div class="contact-info">
-                <p><strong>Name:</strong> Haji Muhammad Rafique & Sons</p>
-                <p><strong>Phone:</strong> 03338235090</p>
-                <p><strong>Phone:</strong> 03006400400</p>
-                <p><strong>Email:</strong> imranrafique719@gmail.com</p>
-            </div>
+            <div class="contact-wrapper">
 
-            <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <input type="tel" placeholder="Your Phone">
-                <input type="date">
-                <button type="submit">Submit</button>
-            </form>
+                <!-- Left Info + Social -->
+                <div class="contact-details">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Business Name:</strong> Haji Muhammad Rafique & Sons</p>
+                    <p><strong>Phone 1:</strong> <a href="tel:03xxxxxxxxx">03xx xxxxxxx</a></p>
+                    <p><strong>Phone 2:</strong> <a href="tel:03xxxxxxxxx">03xx xxxxxxx</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:ayyanimran719@gmail.com">ayyanimran719@gmail.com</a>
+                    </p>
+
+                    <div class="footer-social-links">
+                        <a href="https://wa.me/03xxxxxxxxx" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-block">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone" required>
+                        <textarea placeholder="Your Message" rows="5"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
         </section>
 
     </div>
@@ -114,4 +143,5 @@
     </footer>
 
 </body>
+
 </html>
