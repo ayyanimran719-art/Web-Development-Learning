@@ -1,68 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Motor Winding Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPREME GYM</title>
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="ayyan.css">
 </head>
 
 <body>
 
-    <h1>Motor Winding Service</h1>
-    <hr>
-    
+    <header>
+        <div class="logo">SUPREME <span>GYM</span></div>
+        <nav>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Programs</a>
+            <a href="#" class="nav-link">Plans</a>
+            <a href="#" class="nav-link">Contact</a>
+        </nav>
+    </header>
 
-    <h2>Welcome</h2>
-    <p>
-        Welcome to our Motor Winding Service website. We provide high-quality motor repair and winding solutions.
-    </p>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>GRIND TODAY. SHINE TOMORROW.</h1>
+            <p>Transform your body. Transform your life.</p>
+            <button>Join Now</button>
+        </div>
+    </section>
 
-    <h2>About Us</h2>
-    <p>
-        We have experience in repairing electric motors, rewinding, and maintenance services.
-        Our goal is to provide reliable and affordable services to our customers.
-    </p>
+    <!-- PROGRAMS -->
+    <section>
+        <h2>Our Programs</h2>
+        <div class="cards">
 
-    <h2>Our Services</h2>
-    <ul>
-        <li>AC Motor Winding</li>
-        <li>DC Motor Repair</li>
-        <li>Fan Motor Repair</li>
-        <li>Water Pump Motor Winding</li>
-    </ul>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1200">
+                <h3>Strength Training</h3>
+                <p>Build serious muscle with structured workouts.</p>
+            </div>
 
-    <h2>Why Choose Us?</h2>
-    <ol>
-        <li>Experienced Technicians</li>
-        <li>Affordable Prices</li>
-        <li>Quick Service</li>
-        <li>Quality Work</li>
-    </ol>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?q=80&w=1200">
+                <h3>Cardio</h3>
+                <p>Improve stamina and burn fat faster.</p>
+            </div>
 
-    <h2>Our Work</h2>
-    <p>Sample Motor Image:</p>
-    <img src="data:image/jpeg;base64,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"
-        alt="Motor Image" width="300">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200">
+                <h3>Bodybuilding</h3>
+                <p>Advanced training for ultimate physique.</p>
+            </div>
 
-    <h2>Contact Us</h2>
-    <p>Name: Haji Muhammad Rafique & Sons</p>
-    <p>Phone: 03338235090</p>
-    <p>Phone: 03006400400</p>
-    <p>Email: imranrafique719@gmail.com</p>
-    <p>
-        Visit Google:
-        <a href="https://www.google.com">Click Here</a>
-    </p>
-    <div>Name: <input type="text" name="myName"></div>
-    <br>
-    <div>Email: <input type="email" name="myEmail"></div>
-    <br>
-    <div>Phone: <input type="tel" name="myPhone"></div>
-    <br>
-    <div><input type="submit" value="Submit"></div>
-    <br>
-    <div>Date:<input type="date" name="myDate"></div>
-    <hr>
-    <p>© 2026 Motor Winding Services</p>
+        </div>
+    </section>
+
+    <!-- TRAINERS -->
+    <section>
+        <h2>Our Trainers</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800">
+                <h3>JHON</h3>
+                <p>Professional Fitness Coach</p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://media.istockphoto.com/id/1157240773/photo/close-up-young-asian-man-holding-dumbbell-in-hand-for-playing-shoulder-press-to-gaining.webp?a=1&b=1&s=612x612&w=0&k=20&c=mghaLfEhFBEv_775L65xkowlZEOMoUYZRF4wvj8hkuo=">
+                <h3>MICHEAL</h3>
+                <p>Certified Gym Trainer</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?q=80&w=800">
+                <h3>ROBERT</h3>
+                <p>Body Transformation Expert</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MEMBERSHIP -->
+    <section class="membership">
+        <h2>Membership Plans</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Basic</h3>
+                <h2>$10</h2>
+                <p>Gym Access</p>
+                <button>Join</button>
+            </div>
+
+            <div class="card">
+                <h3>Standard</h3>
+                <h2>$25</h2>
+                <p>Trainer Support</p>
+                <button>Join</button>
+            </div>
+
+            <div class="card">
+                <h3>Premium</h3>
+                <h2>$50</h2>
+                <p>Full Access</p>
+                <button>Join</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer-top">
+        <div class="footer-columns">
+
+            <div>
+                <h3>Company</h3>
+                <p>About</p>
+                <p>Careers</p>
+                <p>Blog</p>
+            </div>
+
+            <div>
+                <h3>Resources</h3>
+                <p>Programs</p>
+                <p>Plans</p>
+                <p>Guides</p>
+            </div>
+
+            <div>
+                <h3>Support</h3>
+                <p>Help Center</p>
+                <p>Privacy</p>
+                <p>Terms</p>
+            </div>
+
+            <div class="footer-brand">
+                <h2>SUPREME GYM</h2>
+                <p>Train hard. Stay strong.</p>
+
+                <div class="social-icons">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-tiktok"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Supreme Gym. All rights reserved.</p>
+    </footer>
 
 </body>
 

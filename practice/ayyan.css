@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: black;
+    color: white;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: #111;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: red;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* CLICKABLE LINK EFFECT */
+nav a:hover,
+nav a:active {
+    color: red;
+    /* hover or click → red */
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1200") no-repeat center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+}
+
+.hero-content button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* BUTTONS */
+.membership button {
+    margin-top: 10px;
+    padding: 10px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer-top {
+    background: #000;
+    padding: 60px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-columns div {
+    margin: 10px;
+}
+
+.footer-columns p {
+    color: #aaa;
+}
+
+.footer-brand h2 {
+    color: red;
+}
+
+/* ICONS */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: red;
+}
+
+/* BOTTOM */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
